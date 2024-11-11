@@ -3,9 +3,10 @@
   "builds": [
     {
       "src": "change.py",
-      "use": "@vercel/python@3.1.0",
+      "use": "@vercel/python",
       "config": {
-        "includeFiles": ["templates/**"]
+        "includeFiles": ["templates/**"],
+        "runtime": "python3.9"
       }
     }
   ],
